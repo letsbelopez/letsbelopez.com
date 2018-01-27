@@ -1,0 +1,20 @@
+{
+  "name": "contact",
+  "version": "1.0.0",
+  "description": "contactform micro service ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "author": "david lopez",
+  "license": "ISC",
+  "dependencies": {
+    "@sendgrid/mail": "^6.2.0",
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "now-redirect",
+  "version": "1.0.0",
+  "description": "Simple redirect service for now.sh",
+  "repository": "timneutkens/now-redirect",
+  "author": "Tim Neutkens",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "now": {
+    "env": [
+      "REDIRECT_URL"
+    ]
+  }
+}
