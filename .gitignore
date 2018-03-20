@@ -3,3 +3,4 @@ node_modules
 *.log
 sendgrid.env
 letsbelopez.com/out
+.vscode

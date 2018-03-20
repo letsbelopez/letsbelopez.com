@@ -5,7 +5,8 @@ module.exports = {
       '/portfolio': {page: '/portfolio'},
       '/washington-federal': {page: '/washington-federal'},
       '/built-green': {page: '/built-green'},
-      '/dsiq': {page: '/dsiq'}
+      '/dsiq': {page: '/dsiq'},
+      '/tech': {page: '/tech'}
     }
   }
 }

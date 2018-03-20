@@ -4,104 +4,135 @@ const HomeItem = () => (
   <section>
     <div>
       <aside>
-        <h1>Websites from custom design</h1>
+        <h1>Working with me</h1>
         <h2>
-          <Link href='/portfolio'><a>Click</a></Link> to see some projects where I implemented a custom design from scratch.
-          </h2>
-        <ul>
-          <li><p>Put your design in a Sketch file or InvisionApp.</p></li>
-          <li><p>Share the design with me.</p></li>
-          <li><p>Your pixel perfect web site is on its way.</p></li>
+         Communication and customer service are my primary focus.
+        </h2>
+        <ul className='hidden-mobile'>
+          <li><p>I'll turn your dreams into a beautiful website.</p></li>
+          <li><p>Focus on what you do best, let me handle the tech stuff.</p></li>
+          <li><p>You'll always be up to date on the latest tech and security.</p></li>
         </ul>
       </aside>
       <aside className='image-wrapper'>
-        <Link href='https://washingtonfederal.com'>
-          <a><img src='/static/dsiq-home.jpg' alt='dsiq home' /></a>
+        <Link href='https://washingtonfederal.com/personal-banking/mortgages/loan-calculator'>
+          <a className='center'><img src='/static/wafd-mortgage-calculator.png' alt='washington federal' /></a>
         </Link>
+        <label>I made this mortgage calculator for Washington Federal Bank</label>
+        <ul className='visible-mobile'>
+          <li><p>I'll turn your dreams into a beautiful website.</p></li>
+          <li><p>Focus on what you do best, let me handle the tech stuff.</p></li>
+          <li><p>You'll always be up to date on the latest tech and security.</p></li>
+        </ul>
       </aside>
     </div>
     <style jsx>{`
-      a {
-        color: #067df7;
-        text-decoration: none;
+    a {
+      color: #067df7;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    label {
+      display: block;
+      text-align: center;
+      font-style: italic;
+      font-size: 12px;
+    }
+
+    section {
+      padding: 40px 0;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+      max-width: 900px
+      margin-left: auto;
+      margin-right: auto;
+      align-items: center;
+    }
+
+    aside:first-child {
+      padding-right: 30px
+    }
+
+    h1 {
+      font-size: 22px;
+      font-weight: normal;
+      line-height: 34px;
+      text-align: left;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 26px;
+      color: #999;
+    }
+
+    li {
+      margin-top: 10px;
+    }
+
+    p {
+      margin: -5px 0 0 0;
+    }
+
+    .image-wrapper img {
+      width: 350px;
+      height: 350px;
+    }
+
+    .visible-mobile {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .hidden-mobile {
+        display: none;
       }
 
-      a:hover {
-        text-decoration: underline;
-      }
-
-      img {
-        width: 100%;
-      }
-
-      section {
-        padding: 40px 0;
+      .visible-mobile {
+        display: block;
       }
 
       div {
-        display: flex;
-        justify-content: space-between;
-        max-width: 900px
-        margin-left: auto;
-        margin-right: auto;
-        align-items: center;
+        flex-direction: column;
       }
 
-      h1 {
-        font-size: 22px;
-        font-weight: normal;
-        line-height: 34px;
-        text-align: left;
+      h1, h2 {
+        text-align: center;
       }
 
-      h2 {
-        font-size: 16px;
-        font-weight: normal;
-        line-height: 26px;
-        color: #999;
-      }
-
-      li {
-        margin-top: 10px;
-      }
-
-      p {
-        margin: -5px 0 0 0;
-      }
-
-      .image-wrapper img {
-        width: 350px;
-        height: 350px;
+      ul {
+        margin: 40px auto 0 auto;
+        max-width: 440px;
+        padding: 0;
       }
 
       aside:first-child {
-        order: 2;
-        padding-left: 30px;
+        padding: 20px 20px 0 20px;
       }
 
-      aside:last-child {
-        order: 1;
+      aside.image-wrapper {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
       }
 
-      @media (max-width: 768px) {
-        div {
-          flex-direction: column;
-        }
-
-        aside:first-child {
-          padding: 20px;
-        }
-
-        h1, h2 {
-          text-align: center;
-        }
-
-        ul {
-          margin: 40px auto 0 auto;
-          max-width: 310px;
-          padding: 0;
-        }
+      .center {
+        text-align: center;
       }
+    }
     `}</style>
   </section>
 )

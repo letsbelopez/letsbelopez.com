@@ -6,6 +6,12 @@ const Portfolio = () => (
   <Layout title="David Lopez - Portfolio">
     <div className='portfolio'>
       <Markdown source={`
+## Washington Federal
+Washington Federal bank just celebrated their 100 year anniversary. 
+This is site was built on Sitefinity CMS. [washingtonfederal.com](https://washingtonfederal.com)
+  
+![washington federal home](/static/wafd-home.jpg "Washington Federal")
+
 ## DSIQ
 A new design for DSIQ's customer facing website was implemented using Umbraco CMS.
 DSIQ wanted a simple .NET based CMS that would give them easy access to edit select 
@@ -21,13 +27,6 @@ can create new pages from the content block templates or easily re-order them. B
 is still under construction.
 
 ![built green home](/static/built-green-home.jpg "Built Green")
-
-## Washington Federal
-Washington Federal bank just celebrated their 100 year anniversary. 
-This is site was built on Sitefinity CMS. [washingtonfederal.com](https://washingtonfederal.com)
-  
-![washington federal home](/static/wafd-home.jpg "Washington Federal")
-
       `} />
     </div>
     <ContactForm />

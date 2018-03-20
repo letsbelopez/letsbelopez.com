@@ -1,28 +1,15 @@
+import Link from 'next/link'
+
 const HomeItemCol = () => (
   <section>
     <div>
       <aside>
-        <h1>Web Development</h1>
+        <h1>Technology</h1>
         <p>
-          Need work or advice on your website project?
+          I've never encountered a problem I couldn't solve.
         </p>
         <p>
-          I work with the latest web technologies like Angular and ReactJS. I can work solo or with your team.
-        </p>
-      </aside>
-      <aside>
-        <h1>Microsoft .NET</h1>
-        <p>
-          I can support .NET MVC, Web API, Sitefinity CMS and Umbraco projects.
-        </p>
-        <p>
-          I'm a Sitefinity certified developer.
-        </p>
-      </aside>
-      <aside>
-        <h1>Single Page Apps (SPA)</h1>
-        <p>
-          I can build a SPA or an API to connect to it.
+          <Link href='/tech'><a>Click</a></Link> to see tech I've worked with.
         </p>
       </aside>
     </div>
@@ -36,19 +23,13 @@ const HomeItemCol = () => (
       }
 
       div {
-        display: flex;
-        justify-content: space-between;
-        max-width: 900px
-        margin-left: auto;
-        margin-right: auto;
-        align-items: start;
+        text-align: center;
       }
 
       h1 {
         font-size: 22px;
         font-weight: normal;
         line-height: 34px;
-        text-align: left;
       }
 
       h2 {
